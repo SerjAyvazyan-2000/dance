@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Студия танца a.dance</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Студия современного танца a.dance (Эй.Дэнс) в КЦ «Атмосфера», Москва. Группы для детей с 3 лет, подростков и взрослых, «Подкачка + растяжка», отчётные концерты на большой сцене. Запишитесь на пробное занятие.">
+<meta name="theme-color" content="#120b14">
+<meta property="og:title" content="a.dance — студия, где танцуют для себя и для сцены">
+<meta property="og:description" content="Группы с 3 лет и для взрослых, растяжка, концерты. Пробное занятие со скидкой 50%.">
+<meta property="og:image" content="assets/images/concert-flamenco.jpg">
+<link rel="icon" href="assets/images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Onest:wght@300;400;500;600;700&family=Marck+Script&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ===== PRELOADER ===== -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <svg class="preloader__mark" viewBox="0 0 220 120">
+    <path class="preloader__path" d="M70 40 C 40 20, 12 60, 30 88 C 46 110, 70 80, 78 52 C 80 70, 82 92, 96 92 C 120 92, 150 60, 176 48"/>
+    <circle class="preloader__dot" cx="194" cy="86" r="9"/>
+  </svg>
+  <span class="preloader__word">dance</span>
+</div>
+
+<div class="progress" id="progress"></div>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="header__in wrap">
+    <a href="#top" class="logo" aria-label="a.dance — на главную">
+      <img src="assets/images/logo.jpg" alt="" width="44" height="44">
+      <span class="logo__text"><b>a.dance</b><small>студия танца</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#directions">Направления</a>
+      <a href="#stretch">Растяжка</a>
+      <a href="#stage">Сцена</a>
+      <a href="#team">Педагоги</a>
+      <a href="#offer">Акция</a>
+      <a href="#contacts">Контакты</a>
+      <div class="nav__mobile-foot">
+        <a href="tel:+79299271414" class="nav__phone">8 929 927-14-14</a>
+        <a href="#form" class="btn btn--accent">Записаться на пробное</a>
+      </div>
+    </nav>
+    <a href="tel:+79299271414" class="header__phone">8 929 927-14-14</a>
+    <a href="#form" class="btn btn--accent btn--sm header__cta magnetic">Пробное занятие</a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero__spot" id="spot" aria-hidden="true"></div>
+  <div class="hero__in wrap">
+    <div class="hero__text">
+      <p class="eyebrow"><span class="dot"></span> Москва · САО · КЦ «Атмосфера»</p>
+      <h1 class="hero__title">
+        <span class="line"><span>Танцуй</span></span>
+        <span class="line"><span>для себя.</span></span>
+        <span class="line line--script"><span>выходи на сцену</span></span>
+      </h1>
+      <p class="hero__lead">Студия современного танца для детей с 3 лет, подростков и взрослых. Каждый сезон наши ученики выходят на большую сцену, а взрослые находят час, где есть только они и музыка.</p>
+      <div class="hero__actions">
+        <a href="#form" class="btn btn--accent btn--lg magnetic">Записаться на пробное <i class="arr">→</i></a>
+        <a href="#directions" class="btn btn--ghost btn--lg">Подобрать группу</a>
+      </div>
+      <ul class="hero__facts">
+        <li><b>−50%</b><span>на первое пробное по акции «Приведи друга»</span></li>
+        <li><b>3+</b><span>лет — возраст самой младшей группы</span></li>
+        <li><b>2</b><span>группы для взрослых: днём и вечером</span></li>
+      </ul>
+    </div>
+
+    <div class="hero__visual" id="heroVisual">
+      <figure class="hv hv--1" data-depth="0.6"><img src="assets/images/concert-flamenco.jpg" alt="Номер студии на отчётном концерте, танцовщицы в красном" fetchpriority="high"></figure>
+      <figure class="hv hv--2" data-depth="1.2"><img src="assets/images/stretch-7.jpg" alt="Занятие по растяжке для девушек"></figure>
+      <figure class="hv hv--3" data-depth="0.9"><img src="assets/images/concert-ballet.jpg" alt="Юные балерины на сцене"></figure>
+      <div class="hv-badge" data-depth="1.6">
+        <span class="hv-badge__ring">
+          <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+            <text><textPath href="#circ">пробное занятие · пробное занятие · </textPath></text></svg>
+        </span>
+        <b>−50%</b>
+      </div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Современный танец</span><i>a.</i><span>Растяжка</span><i>a.</i><span>Бурлеск</span><i>a.</i><span>Аргентинское танго</span><i>a.</i><span>Сольные постановки</span><i>a.</i><span>Детские группы с 3 лет</span><i>a.</i><span>Концерты</span><i>a.</i>
+      <span>Современный танец</span><i>a.</i><span>Растяжка</span><i>a.</i><span>Бурлеск</span><i>a.</i><span>Аргентинское танго</span><i>a.</i><span>Сольные постановки</span><i>a.</i><span>Детские группы с 3 лет</span><i>a.</i><span>Концерты</span><i>a.</i>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PAIN / WHY ===== -->
+<section class="why section" id="why">
+  <div class="wrap">
+    <div class="why__head reveal">
+      <p class="eyebrow">Почему к нам приходят</p>
+      <h2 class="h2">Кружок, после которого <em class="script">горят глаза</em></h2>
+    </div>
+    <div class="why__grid">
+      <article class="why__card reveal">
+        <span class="why__icon" aria-hidden="true">✦</span>
+        <h3>Цель, а не «походить»</h3>
+        <p>Каждый сезон заканчивается отчётным концертом на большой сцене. Ребёнок видит, ради чего старается, и не бросает через месяц.</p>
+      </article>
+      <article class="why__card reveal">
+        <span class="why__icon" aria-hidden="true">✦</span>
+        <h3>Группы по возрасту и уровню</h3>
+        <p>От малышей 3–4 лет до взрослых, которые никогда не танцевали. Никто не стоит в последнем ряду, педагог видит каждого.</p>
+      </article>
+      <article class="why__card reveal">
+        <span class="why__icon" aria-hidden="true">✦</span>
+        <h3>Постановки, а не разминка</h3>
+        <p>«Индия», «Бурлеск», танго, «Тихий океан». Настоящие хореографические номера с костюмами, светом и сценой.</p>
+      </article>
+      <article class="why__card reveal">
+        <span class="why__icon" aria-hidden="true">✦</span>
+        <h3>Тёплое комьюнити</h3>
+        <p>Поддерживающий коллектив, где радуются чужим успехам. Сюда хочется возвращаться, даже если день был тяжёлым.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DIRECTIONS ===== -->
+<section class="dirs section" id="directions">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="eyebrow">Направления и группы</p>
+        <h2 class="h2">Найдите <em class="script">свою</em> группу</h2>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Кому подходит">
+        <button class="tab is-active" role="tab" aria-selected="true" data-filter="all" id="tab-all">Все</button>
+        <button class="tab" role="tab" aria-selected="false" data-filter="kids" id="tab-kids">Детям</button>
+        <button class="tab" role="tab" aria-selected="false" data-filter="teen" id="tab-teen">Подросткам</button>
+        <button class="tab" role="tab" aria-selected="false" data-filter="adult" id="tab-adult">Взрослым</button>
+      </div>
+    </div>
+
+    <div class="dirs__grid" id="dirsGrid">
+      <article class="dir reveal" data-cat="kids">
+        <div class="dir__img"><img src="assets/images/concert-ballet.jpg" alt="Детский номер на концерте" loading="lazy"></div>
+        <div class="dir__body">
+          <span class="tag">3–6 лет</span>
+          <h3>Бусинки и Сладкоежки</h3>
+          <p>Первые шаги в танце через игру: координация, музыкальность, уверенность. Многие впервые выходят на большую сцену уже в 3–4 года.</p>
+          <a href="#form" class="dir__link" data-group="Бусинки / Сладкоежки">Записать ребёнка <i class="arr">→</i></a>
+        </div>
+      </article>
+
+      <article class="dir reveal" data-cat="kids teen">
+        <div class="dir__img"><img src="assets/images/concert-kids.jpg" alt="Дети в костюмах на отчётном концерте" loading="lazy"></div>
+        <div class="dir__body">
+          <span class="tag">7–12 лет</span>
+          <h3>Мандаринки</h3>
+          <p>Современная хореография и лирические постановки. Номер «Тихий океан» ребята танцевали на сцене КЦ «Строгино».</p>
+          <a href="#form" class="dir__link" data-group="Мандаринки">Записать ребёнка <i class="arr">→</i></a>
+        </div>
+      </article>
+
+      <article class="dir reveal" data-cat="teen">
+        <div class="dir__img"><img src="assets/images/concert-flamenco.jpg" alt="Группа подростков в красных рубашках танцует на сцене" loading="lazy"></div>
+        <div class="dir__body">
+          <span class="tag">подростки</span>
+          <h3>Искры</h3>
+          <p>Яркие сценические номера: от аргентинского танго до драматичных постановок. Для тех, кто хочет выступать по-взрослому.</p>
+          <a href="#form" class="dir__link" data-group="Искры">Хочу в Искры <i class="arr">→</i></a>
+        </div>
+      </article>
+
+      <article class="dir reveal" data-cat="teen adult">
+        <div class="dir__img"><img src="assets/images/concert-gymnast.jpg" alt="Сольное выступление в луче прожектора" loading="lazy"></div>
+        <div class="dir__body">
+          <span class="tag">индивидуально</span>
+          <h3>Сольные постановки</h3>
+          <p>Индивидуальный номер от директора студии Эдуарда Антипина. Наши солисты выступают на концертах и чемпионатах.</p>
+          <a href="#form" class="dir__link" data-group="Сольная постановка">Обсудить соло <i class="arr">→</i></a>
+        </div>
+      </article>
+
+      <article class="dir reveal" data-cat="adult">
+        <div class="dir__img"><img src="assets/images/stretch-2.jpg" alt="Девушки на занятии в светлом зале" loading="lazy"></div>
+        <div class="dir__body">
+          <span class="tag">взрослые · с нуля</span>
+          <h3>Красотки (день) и Фиалки (вечер)</h3>
+          <p>Для девушек, которые давно мечтали танцевать, но всё время что-то останавливало. Красиво, женственно и без требований к опыту.</p>
+          <a href="#form" class="dir__link" data-group="Красотки / Фиалки">Прийти на пробное <i class="arr">→</i></a>
+        </div>
+      </article>
+
+      <article class="dir reveal" data-cat="adult">
+        <div class="dir__img"><img src="assets/images/stretch-1.jpg" alt="Растяжка на коврике с блоком" loading="lazy"></div>
+        <div class="dir__body">
+          <span class="tag">взрослые</span>
+          <h3>Подкачка + растяжка</h3>
+          <p>Тонус мышц, гибкость и мягкое снятие зажимов. Бережная работа с телом после шумного дня в городе.</p>
+          <a href="#form" class="dir__link" data-group="Подкачка + растяжка">Записаться <i class="arr">→</i></a>
+        </div>
+      </article>
+
+      <article class="dir dir--wide reveal" data-cat="kids teen adult">
+        <div class="dir__img"><img src="assets/images/concert-vocal.jpg" alt="Праздник на сцене" loading="lazy"></div>
+        <div class="dir__body">
+          <span class="tag tag--gold">праздник</span>
+          <h3>День рождения на мастер-классе</h3>
+          <p>Выбираете любимый трек, приглашаете друзей, разучиваете связку с хореографом и записываете настоящий видеоклип на память. Подарок, который вспоминают годами.</p>
+          <a href="#form" class="dir__link" data-group="Мастер-класс на день рождения">Забронировать праздник <i class="arr">→</i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STRETCH ===== -->
+<section class="stretch section" id="stretch">
+  <div class="wrap stretch__in">
+    <div class="stretch__text reveal">
+      <p class="eyebrow">Подкачка + растяжка</p>
+      <h2 class="h2">Выдохнуть шум города <em class="script">и вернуться к себе</em></h2>
+      <p class="lead">После динамичного дня в мегаполисе важно место, где можно замедлиться и снова почувствовать своё тело. Мы бережно приводим мышцы в тонус, возвращаем гибкость и снимаем зажимы. Через работу с телом приходит внутренняя уверенность, которая остаётся с вами и за пределами зала.</p>
+      <ul class="checks">
+        <li><b>Полное погружение.</b> Только вы, ваше тело и удовольствие от процесса.</li>
+        <li><b>Бережный подход.</b> Тренер внимательно следит за каждым движением.</li>
+        <li><b>Сильное окружение.</b> Комьюнити девушек, которые вдохновляют друг друга меняться.</li>
+      </ul>
+      <a href="#form" class="btn btn--accent magnetic" data-group="Подкачка + растяжка">Подарить себе это время <i class="arr">→</i></a>
+    </div>
+    <div class="stretch__stack reveal" id="stack">
+      <figure class="st st--a"><img src="assets/images/stretch-4.jpg" alt="Растяжка в шпагате на коврике" loading="lazy"></figure>
+      <figure class="st st--b"><img src="assets/images/stretch-5.jpg" alt="Наклон в сторону, вид со спины" loading="lazy"></figure>
+      <figure class="st st--c"><img src="assets/images/stretch-3.jpg" alt="Растяжка к стопе с йога-блоками" loading="lazy"></figure>
+    </div>
+  </div>
+
+  <div class="strip" aria-label="Фото с занятий">
+    <div class="strip__track" id="strip">
+      <img src="assets/images/stretch-1.jpg" alt="Занятие по растяжке" loading="lazy">
+      <img src="assets/images/stretch-6.jpg" alt="Детали растяжки" loading="lazy">
+      <img src="assets/images/stretch-2.jpg" alt="Групповое занятие" loading="lazy">
+      <img src="assets/images/stretch-7.jpg" alt="Боковой наклон в шпагате" loading="lazy">
+      <img src="assets/images/stretch-3.jpg" alt="Растяжка с блоками" loading="lazy">
+      <img src="assets/images/stretch-5.jpg" alt="Наклон со спины" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ===== PATH ===== -->
+<section class="path section" id="path">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="eyebrow">Как начать</p>
+        <h2 class="h2">От первого занятия <em class="script">до сцены</em></h2>
+      </div>
+    </div>
+    <ol class="path__list">
+      <li class="path__step reveal">
+        <span class="path__num">01</span>
+        <h3>Оставляете заявку</h3>
+        <p>Перезвоним в течение дня, узнаем возраст и опыт, подберём группу и удобное время.</p>
+      </li>
+      <li class="path__step reveal">
+        <span class="path__num">02</span>
+        <h3>Пробное занятие</h3>
+        <p>Знакомитесь с педагогом и группой. Достаточно удобной одежды и желания.</p>
+      </li>
+      <li class="path__step reveal">
+        <span class="path__num">03</span>
+        <h3>Абонемент со скидкой</h3>
+        <p>Оплатили в день пробного по акции — дополнительно −10% на абонемент.</p>
+      </li>
+      <li class="path__step reveal">
+        <span class="path__num">04</span>
+        <h3>Выход на сцену</h3>
+        <p>Постановка, костюмы и отчётный концерт перед полным залом зрителей.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== STAGE / GALLERY ===== -->
+<section class="stage section" id="stage">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="eyebrow">Наши работы · отчётный концерт 22 мая</p>
+        <h2 class="h2">Сцена, свет, <em class="script">аплодисменты</em></h2>
+      </div>
+      <p class="sec-head__note">В КЦ «Атмосфера» отгремел большой отчётный концерт: колоритная «Индия» студии Эй.Дэнс, драйв капоэйры и брейка, гимнастки с обручами и лентами и финальное «Прекрасное далёко», которое объединило всех участников в одну большую семью.</p>
+    </div>
+
+    <div class="gallery" id="gallery">
+      <button class="g g--tall reveal" data-src="assets/images/concert-flamenco.jpg" aria-label="Открыть фото: номер в красных костюмах"><img src="assets/images/concert-flamenco.jpg" alt="Номер в красных костюмах" loading="lazy"><span>Постановка «Искр»</span></button>
+      <button class="g reveal" data-src="assets/images/concert-ballet.jpg" aria-label="Открыть фото: балерины"><img src="assets/images/concert-ballet.jpg" alt="Балерины в белом" loading="lazy"><span>Классика</span></button>
+      <button class="g reveal" data-src="assets/images/concert-kids.jpg" aria-label="Открыть фото: детский номер"><img src="assets/images/concert-kids.jpg" alt="Детский номер с хореографом" loading="lazy"><span>Детский номер</span></button>
+      <button class="g g--wide reveal" data-src="assets/images/concert-gymnast.jpg" aria-label="Открыть фото: соло в луче света"><img src="assets/images/concert-gymnast.jpg" alt="Соло в луче прожектора" loading="lazy"><span>Соло в луче</span></button>
+      <button class="g reveal" data-src="assets/images/concert-hoop.jpg" aria-label="Открыть фото: гимнастка с обручем"><img src="assets/images/concert-hoop.jpg" alt="Гимнастка с обручем" loading="lazy"><span>Гимнастика</span></button>
+      <button class="g reveal" data-src="assets/images/concert-capoeira.jpg" aria-label="Открыть фото: капоэйра"><img src="assets/images/concert-capoeira.jpg" alt="Капоэйра на концерте" loading="lazy"><span>Капоэйра</span></button>
+      <button class="g reveal" data-src="assets/images/concert-solo.jpg" aria-label="Открыть фото: вокал"><img src="assets/images/concert-solo.jpg" alt="Вокальный номер" loading="lazy"><span>Вокал</span></button>
+      <button class="g g--wide reveal" data-src="assets/images/concert-final.jpg" aria-label="Открыть фото: все участники концерта"><img src="assets/images/concert-final.jpg" alt="Финал концерта, все участники на сцене" loading="lazy"><span>Финал · «Прекрасное далёко»</span></button>
+    </div>
+
+    <div class="quote reveal">
+      <p>Мы благодарим артистов за смелость, педагогов за вдохновение, а зрителей за горящие глаза и поддержку.</p>
+      <span>— команда a.dance</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section class="team section" id="team">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="eyebrow">Педагоги</p>
+        <h2 class="h2">Хореографы, которые <em class="script">ставят на сцену</em></h2>
+      </div>
+    </div>
+    <div class="team__grid">
+      <article class="person reveal">
+        <span class="person__mono" aria-hidden="true">ЭА</span>
+        <h3>Эдуард Антипин</h3>
+        <p class="person__role">Директор студии, хореограф</p>
+        <p>Ставит сольные номера для учеников, которые выступают на концертах и чемпионатах. Его собственное соло на концерте заставило зал затаить дыхание.</p>
+      </article>
+      <article class="person reveal">
+        <span class="person__mono" aria-hidden="true">АМ</span>
+        <h3>Александра Матюхина</h3>
+        <p class="person__role">Педагог, хореограф-постановщик</p>
+        <p>Любимый педагог малышей из «Бусинок». Автор номеров «Бурлеск» и «Тихий океан» о женственности, лиричности и красоте движения.</p>
+      </article>
+      <article class="person reveal">
+        <span class="person__mono" aria-hidden="true">ОЗ</span>
+        <h3>Олег Заугаров</h3>
+        <p class="person__role">Хореограф-постановщик</p>
+        <p>Постановщик аргентинского танго для группы «Искры» и номера Synergy. Привносит в студию энергию и сценический драйв.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OFFER ===== -->
+<section class="offer section" id="offer">
+  <div class="wrap">
+    <div class="offer__card reveal">
+      <div class="offer__glow" aria-hidden="true"></div>
+      <div class="offer__left">
+        <p class="eyebrow eyebrow--dark">Акция «Приведи друга»</p>
+        <h2 class="offer__title">Танцевать вместе <em class="script">выгоднее</em></h2>
+        <p>Заниматься ещё приятнее, когда рядом близкие. Делитесь любимым делом и получайте бонусы.</p>
+      </div>
+      <div class="offer__perks">
+        <div class="perk"><b data-count="50">50</b><span>%</span><p>скидка другу на пробное занятие</p></div>
+        <div class="perk"><b data-count="10">10</b><span>%</span><p>другу на абонемент при оплате в день пробного</p></div>
+        <div class="perk"><b data-count="10">10</b><span>%</span><p>вам на абонемент следующего месяца, когда друг купит абонемент</p></div>
+      </div>
+      <div class="offer__foot">
+        <a href="#form" class="btn btn--dark btn--lg magnetic">Прийти с подругой <i class="arr">→</i></a>
+        <small>Бонус действует один раз для друзей, которые ещё не ходят в кружки КЦ «Атмосфера».</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq section" id="faq">
+  <div class="wrap faq__in">
+    <div class="reveal">
+      <p class="eyebrow">Частые вопросы</p>
+      <h2 class="h2">Отвечаем <em class="script">честно</em></h2>
+      <p class="faq__aside">Не нашли ответа? Напишите нам в <a href="https://t.me/dance_at_a_dance" target="_blank" rel="noopener">Telegram</a> или позвоните — подскажем.</p>
+    </div>
+    <div class="faq__list">
+      <details class="qa reveal" open>
+        <summary>Я никогда не танцевала. Мне можно?</summary>
+        <p>Да. Группы «Красотки» и «Фиалки» созданы как раз для взрослых девушек без опыта. Педагог объясняет каждое движение, а темп подстраивается под группу.</p>
+      </details>
+      <details class="qa reveal">
+        <summary>С какого возраста берёте детей?</summary>
+        <p>С 3 лет. Самые младшие занимаются в группах «Бусинки» и «Сладкоежки», и многие из них уже выступали на большой сцене.</p>
+      </details>
+      <details class="qa reveal">
+        <summary>Что взять на пробное занятие?</summary>
+        <p>Удобную одежду, носки или мягкую обувь и воду. Коврики и блоки для растяжки есть в зале.</p>
+      </details>
+      <details class="qa reveal">
+        <summary>Обязательно выступать на концерте?</summary>
+        <p>Нет, это по желанию. Но почти все, кто пробует, потом ждут следующего концерта: сцена даёт мощную мотивацию.</p>
+      </details>
+      <details class="qa reveal">
+        <summary>Можно ли устроить день рождения в студии?</summary>
+        <p>Да. Мастер-класс с хореографом под любимый трек, связка с друзьями и видеоклип на память. Оставьте заявку, и мы подберём дату.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FORM + CONTACTS ===== -->
+<section class="contacts section" id="contacts">
+  <div class="wrap contacts__in">
+    <div class="contacts__info reveal">
+      <p class="eyebrow">Контакты</p>
+      <h2 class="h2">Ждём вас <em class="script">в зале</em></h2>
+      <ul class="clist">
+        <li><span>Адрес</span><b>Москва, ул. Усиевича, д. 12, 2 этаж<br>Культурный центр «Атмосфера»</b><a href="https://yandex.ru/maps/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%A3%D1%81%D0%B8%D0%B5%D0%B2%D0%B8%D1%87%D0%B0%2C%2012" target="_blank" rel="noopener" class="clink">Открыть на карте ↗</a></li>
+        <li><span>Запись на пробное</span><b><a href="tel:+79299271414">8 929 927-14-14</a></b></li>
+        <li><span>КЦ «Атмосфера»</span><b><a href="tel:+79264104272">+7 926 410-42-72</a></b></li>
+        <li><span>Telegram</span><b><a href="https://t.me/dance_at_a_dance" target="_blank" rel="noopener">@dance_at_a_dance</a> · <a href="https://t.me/KC_Atmosfera" target="_blank" rel="noopener">@KC_Atmosfera</a></b></li>
+      </ul>
+      <div class="socials">
+        <a href="https://t.me/dance_at_a_dance" target="_blank" rel="noopener" class="soc">Канал студии ↗</a>
+        <a href="https://atmosfera.kulturasao.ru/choreography/tproduct/405354025612-studiya-tantsa-eidens-podkachkarastyazhk" target="_blank" rel="noopener" class="soc">Запись на сайте КЦ ↗</a>
+      </div>
+    </div>
+
+    <form class="lead-form reveal" id="form" novalidate>
+      <div class="lead-form__head">
+        <h3>Пробное занятие <em class="script">со скидкой 50%</em></h3>
+        <p>Оставьте контакты — перезвоним и подберём группу.</p>
+      </div>
+      <div class="field">
+        <label for="f-name">Ваше имя</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Анна" required>
+      </div>
+      <div class="field">
+        <label for="f-phone">Телефон</label>
+        <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+      </div>
+      <div class="field">
+        <label for="f-group">Для кого занятие</label>
+        <select id="f-group" name="group">
+          <option>Для ребёнка 3–6 лет</option>
+          <option>Для ребёнка 7–12 лет</option>
+          <option>Для подростка</option>
+          <option>Для себя: Красотки / Фиалки</option>
+          <option>Подкачка + растяжка</option>
+          <option>Сольная постановка</option>
+          <option>Мастер-класс на день рождения</option>
+        </select>
+      </div>
+      <label class="agree" for="f-agree">
+        <input id="f-agree" type="checkbox" required checked>
+        <span>Согласен(на) на обработку персональных данных и с <a href="privacy.html" target="_blank">политикой конфиденциальности</a></span>
+      </label>
+      <button class="btn btn--accent btn--lg btn--block" type="submit">Записаться на пробное <i class="arr">→</i></button>
+      <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer__big" aria-hidden="true">a.dance</div>
+  <div class="wrap footer__in">
+    <div class="footer__brand">
+      <img src="assets/images/logo.jpg" alt="Логотип a.dance" width="56" height="56" loading="lazy">
+      <p>Студия современного танца «Эй.Дэнс» в культурном центре «Атмосфера», Москва.</p>
+    </div>
+    <nav class="footer__nav" aria-label="Нижнее меню">
+      <a href="#directions">Направления</a>
+      <a href="#stage">Концерты</a>
+      <a href="#offer">Акция</a>
+      <a href="#contacts">Контакты</a>
+      <a href="privacy.html" target="_blank">Политика конфиденциальности</a>
+    </nav>
+    <div class="footer__bottom">
+      <span>© 2026 a.dance. Все права защищены.</span>
+      <a class="studio" href="https://studio-psi-olive.vercel.app/" target="_blank" rel="noopener">Сайт разработан в студии <b>Сайтика</b></a>
+    </div>
+  </div>
+</footer>
+
+<!-- floating CTA (mobile) -->
+<a href="#form" class="fab" id="fab">Пробное −50%</a>
+
+<!-- lightbox -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox__close" id="lbClose" aria-label="Закрыть">×</button>
+  <button class="lightbox__nav lightbox__prev" id="lbPrev" aria-label="Предыдущее фото">‹</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lightbox__nav lightbox__next" id="lbNext" aria-label="Следующее фото">›</button>
+</div>
+
+<!-- cookie -->
+<div class="cookie" id="cookie" hidden>
+  <p>Мы используем файлы cookie, чтобы сайт работал удобнее. Продолжая пользоваться сайтом, вы соглашаетесь с <a href="privacy.html" target="_blank">политикой конфиденциальности</a>.</p>
+  <div class="cookie__btns">
+    <button class="btn btn--accent btn--sm" id="cookieOk">Принять</button>
+    <button class="btn btn--ghost btn--sm" id="cookieNo">Только необходимые</button>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
